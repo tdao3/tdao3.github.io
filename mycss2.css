@@ -1,23 +1,26 @@
 body {
-	background-color: rgba(37, 138, 54, 0.32);
+    background-color: rgba(37, 138, 54, 0.32);
 }
 
 h1 {
-	font-size: 50px;
-	color: white;
-	text-align: center;
-	background-color: rgba(5, 175, 159, 0.75);
-	width: auto;
-	padding: 25px;
-	margin: 50px;
-	margin-left: -10px;
-	margin-right: -10px;
-	margin-top: -10px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    background-color: rgba(5, 175, 159, 0.75);
+    width: auto;
+    padding: 25px;
+    margin: 50px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
 }
 
+/* Menu bar */
 ul {
     list-style-type: none;
-    margin: 0;
+    margin-top: -50px;
+    margin-left: -10px;
+    margin-right: -10px;
     padding: 0;
     overflow: hidden;
     background-color: #333;
@@ -25,16 +28,17 @@ ul {
 
 li {
     float: left;
+    font-size: 18px;
 }
 
 li a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: #000000;
 }

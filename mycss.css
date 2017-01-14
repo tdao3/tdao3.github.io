@@ -28,9 +28,11 @@ p {
 	font-size:20px;
 }
 
+/*--- list for uses of a toaster oven ---*/
 ul {
 	margin-left: 20px;
 	font-size: 20px;
+	padding-left: 20px;
 }
 
 .whole {

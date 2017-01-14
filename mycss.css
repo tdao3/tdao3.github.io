@@ -6,7 +6,7 @@ h1 {
 	font-size: 50px
 	color: white;
 	text-align: center;
-    background-color: lightgrey;
+    background-color: white;
     width: auto;
     padding: 25px;
     margin: 50px;
@@ -15,7 +15,7 @@ h1 {
 h2 {
 	font-size: 20px;
 	color: black;
-	text-align: left;
+	text-align: right;
 }
 
 .whole {

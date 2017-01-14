@@ -55,3 +55,32 @@ p {
 	width: 288px;
 	height: 512px;
 }
+
+/***************Menu bar**********/
+ul {
+    list-style-type: none;
+    margin-top: -50px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    font-size: 18px;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #000000;
+}
+/******************************/

@@ -8,7 +8,19 @@ h1 {
 }
 
 .whole {
-	border-radius: 50%;
+	border-radius: 5%;
+	width: 512px;
+	height: 288px;
+}
+
+.handle {
+	border-radius: 5%;
+	width: 512px;
+	height: 288px;
+}
+
+.controls {
+	border-radius: 5%;
 	width: 512px;
 	height: 288px;
 }

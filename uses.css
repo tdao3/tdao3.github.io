@@ -51,8 +51,8 @@ p {
 }
 
 .p3 {
-	margin-top: -10px;
-	margin-bottom: -10px;
+	margin-top: -5px;
+	margin-bottom: -5px;
 }
 
 .whole {
@@ -79,6 +79,7 @@ li {
 }
 
 li a {
+	float: left;
     display: inline-block;
     color: white;
     text-align: center;

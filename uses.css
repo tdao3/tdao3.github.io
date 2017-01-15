@@ -50,6 +50,11 @@ p {
 	overflow:auto;
 }
 
+.p3 {
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
 .whole {
 	border-radius: 5%;
 	width: 60%;

@@ -24,6 +24,17 @@ h2 {
 	text-decoration: overline;
 }
 
+h3 {
+	padding-top: 20px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    height: 20px;
+    width: auto;
+    text-decoration: overline;
+    clear: left;
+}
+
 p {
 	font-size:20px;
 }

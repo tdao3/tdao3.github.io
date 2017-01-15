@@ -46,6 +46,17 @@ p {
     margin: auto;
 }
 
+.comp {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    height: 20px;
+    width:auto;
+}
+
+.li {
+    font-size: 18px;
+}
 /***************Menu bar**********/
 ul {
     list-style-type: none;

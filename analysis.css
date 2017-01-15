@@ -50,6 +50,14 @@ li {
     margin: auto;
 }
 
+.controls {
+    border-radius: 5%;
+    width: 40%;
+    height: 40%;
+    display: block;
+    margin: auto;
+}
+
 .comp {
     font-size: 22px;
     color: rgba(0, 0, 0, 0.6);

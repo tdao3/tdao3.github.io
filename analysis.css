@@ -48,14 +48,16 @@ li {
     height: 65%;
     display: block;
     margin: auto;
+    float:left;
 }
 
 .controls {
     border-radius: 5%;
-    width: 40%;
-    height: 40%;
+    width: 20%;
+    height: 20%;
     display: block;
     margin: auto;
+
 }
 
 .comp {

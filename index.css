@@ -16,9 +16,10 @@ h1 {
 }
 
 h2 {
-    font-size: 500px;
-    color: black;
-    font-family: 'Tangerine', serif;
+    font-size: 300px;
+    color: white;
+    font-family: 'Pinyon Script', cursive;
+    text-align: center;
 }
 
 /***************Menu bar**********/

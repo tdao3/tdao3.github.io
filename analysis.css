@@ -18,7 +18,7 @@ h1 {
 
 /* Interface */
 h2 {
-    font-size: 30px;
+    font-size: 40px;
     color: rgba(0, 0, 0, 0.6);
     text-align: left;
     height: 20px;
@@ -38,6 +38,7 @@ li {
     font-size: 18px;
 }
 
+/* imgs */
 .handle {
     border-radius: 5%;
     width: 65%;
@@ -63,6 +64,8 @@ li {
     text-align: left;
     height: 20px;
     width:auto;
+    margin-bottom: auto;
+    margin-top:40px;
 }
 
 

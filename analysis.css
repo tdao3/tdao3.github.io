@@ -23,9 +23,11 @@ h2 {
     height: 20px;
     width:auto;
     text-decoration: overline;
-    margin-top: 20px;
+    margin-top: 40px;
+    clear:both;
 }
 
+/* handle */
 h3 {
     font-size: 22px;
     color: rgba(0, 0, 0, 0.6);

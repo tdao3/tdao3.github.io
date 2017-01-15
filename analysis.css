@@ -30,6 +30,8 @@ h2 {
 
 p {
     font-size: 18px;
+    width:200px;
+    word-wrap: break-word;
 }
 
 li {

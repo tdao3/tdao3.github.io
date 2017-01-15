@@ -39,6 +39,10 @@ p {
 	font-size:20px;
 }
 
+li {
+    font-size: 20px;
+}
+
 /*--- list for uses of a toaster oven ---*/
 .p2 {
 	margin-left: 20px;
@@ -72,11 +76,6 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-}
-
-li {
-	float: left;
-    font-size: 18px;
 }
 
 li a {

@@ -67,6 +67,11 @@ li {
 	float: left;
 }
 
+.li {
+	float: left;
+	font-size:18px;
+}
+
 /***************Menu bar**********/
 ul {
     list-style-type: none;

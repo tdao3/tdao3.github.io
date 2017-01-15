@@ -42,6 +42,9 @@ p {
 /*--- list for uses of a toaster oven ---*/
 .p2 {
 	margin-left: 20px;
+	margin-top: -10px;
+	margin-bottom: -10px;
+	padding-left: 40px;
 	font-size: 20px;
 	text-align: left;
 	overflow:auto;
@@ -55,6 +58,9 @@ p {
 	float: left;
 }
 
+ul.a {
+	font-size: 20px;
+}
 
 /***************Menu bar**********/
 ul {

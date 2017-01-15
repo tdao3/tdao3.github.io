@@ -15,6 +15,34 @@ h1 {
     margin-top: -10px;
 }
 
+/* Pros and Cons */
+h2 {
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    height: 20px;
+    width:auto;
+    text-decoration: overline;
+    margin-top: 40px;
+    clear:both;
+}
+
+p {
+    font-size: 18px;
+    width:50%;
+    word-wrap: break-word;
+}
+
+.gen {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    height: 20px;
+    width:auto;
+    margin-bottom: auto;
+    margin-top:40px;
+}
+
 .controls {
     border-radius: 5%;
     width: 576px;

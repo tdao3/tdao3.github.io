@@ -18,7 +18,7 @@ h1 {
 
 /* Different Uses */
 h2 {
-	font-size: 40px;
+	font-size: 35px;
 	color: rgba(0, 0, 0, 0.6);
 	text-align: left;
 	height: 20px;
@@ -29,7 +29,7 @@ h2 {
 /* User Interaction */
 h3 {
 	padding-top: 20px;
-    font-size: 40px;
+    font-size: 35px;
     color: rgba(0, 0, 0, 0.6);
     text-align: left;
     height: 20px;

@@ -32,6 +32,13 @@ p {
     word-wrap: break-word;
 }
 
+.p2 {
+    float:left;
+    font-size: 18px;
+    width:60%;
+    word-wrap: break-word;
+}
+
 .gen {
     font-size: 22px;
     color: rgba(0, 0, 0, 0.6);

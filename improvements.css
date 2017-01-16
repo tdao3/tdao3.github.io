@@ -32,6 +32,7 @@ p {
     word-wrap: break-word;
 }
 
+/* paragraphs under cons */
 .p2 {
     font-size: 18px;
     width:40%;

@@ -15,8 +15,14 @@ h1 {
     margin-top: -10px;
 }
 
-/* Pros and Cons */
-h2 {
+p {
+    font-size: 18px;
+    width:70%;
+    word-wrap: break-word;
+}
+
+/* Advantages and Disadvantages */
+.h2 {
     font-size: 40px;
     color: rgba(0, 0, 0, 0.6);
     text-align: left;
@@ -24,12 +30,6 @@ h2 {
     width:auto;
     text-decoration: overline;
     margin-top: 40px;
-}
-
-p {
-    font-size: 18px;
-    width:70%;
-    word-wrap: break-word;
 }
 
 /* paragraphs under cons */

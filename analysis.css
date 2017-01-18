@@ -2,7 +2,6 @@ body {
     background-color: rgba(37, 138, 54, 0.32);
 }
 
-/* Intro */
 h1 {
     font-size: 50px;
     color: #333;
@@ -16,60 +15,7 @@ h1 {
     margin-top: -10px;
 }
 
-/* Interface */
-h2 {
-    font-size: 40px;
-    color: rgba(0, 0, 0, 0.6);
-    text-align: left;
-    height: 20px;
-    width:auto;
-    text-decoration: overline;
-    margin-top: 40px;
-    clear:both;
-}
-
-p {
-    font-size: 18px;
-    width:50%;
-    word-wrap: break-word;
-}
-
-li {
-    font-size: 18px;
-}
-
-/* imgs */
-.handle {
-    border-radius: 5%;
-    width: 65%;
-    height: 65%;
-    display: block;
-    margin: auto;
-    float:left;
-}
-
-.controls {
-    border-radius: 5%;
-    width: 20%;
-    height: 20%;
-    display: block;
-    margin: auto;
-
-}
-
-/* for all the components */
-.comp {
-    font-size: 22px;
-    color: rgba(0, 0, 0, 0.6);
-    text-align: left;
-    height: 20px;
-    width:auto;
-    margin-bottom: auto;
-    margin-top:40px;
-}
-
-
-/************Menu bar**********/
+/***************Menu bar**********/
 ul {
     list-style-type: none;
     margin-top: -50px;
@@ -80,7 +26,7 @@ ul {
     background-color: #333;
 }
 
-.li {
+li {
     float: left;
     font-size: 18px;
 }

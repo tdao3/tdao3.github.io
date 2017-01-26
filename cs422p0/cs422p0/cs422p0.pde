@@ -1,3 +1,5 @@
+// GROUP: Tran Dao, Weiheng Ruan, Jason Lee
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 // sample simple processing / processing.js file from Andy Johnson - CS 422 - Spring 2017
 
@@ -11,7 +13,7 @@
 
 // here is a processing.js solution from http://aaron-sherwood.com/processingjs/circleSound.html
 // uncomment this line to get audio in Processing.js
- Audio beepSound = new Audio();
+Audio beepSound = new Audio();
 
 // also note the soundfile needs to be in the data folder for processing and outside that folder for Processing.js
 // sounds are also a bit slowerer to start up in Processing.js
@@ -20,19 +22,20 @@
 PImage img;
 
 // some buttons
-int[][] buttons = { {50, 100}, {50, 200}, {50, 300}, {50, 400}, {50,500}};
+int[][] buttons = { {50, 100}, {50, 200}, {50, 300}, {50, 400}, {50, 500}};
 int buttonX = 100;
 int buttonY = 75;
 
 // no buttons / mode currently selected
 int selectedOne = -1;
 
-int currentTime;
 int pauseTime;
-int diff = currentTime - pauseTime;
-
+int currentTime;
+boolean state= true;
+boolean laststate= false;
+int save;
 PFont f;
-
+int lastState;
 /////////////////////////////////////////////////////
 
 void loadSounds(){
@@ -42,7 +45,7 @@ void loadSounds(){
   //beepSound = new SoundFile(this, "bing.mp3");
   
   // processing.js load sound
-  beepSound.setAttribute("src","bing.mp3");
+ beepSound.setAttribute("src","bing.mp3");
 }
 
 void playBeep() {
@@ -74,7 +77,8 @@ void draw() {
   background(0);
   noStroke();
   
-  currentTime = millis();
+  
+    currentTime = millis();
     
   // draw some buttons
   fill(127,127,127);
@@ -91,16 +95,19 @@ void draw() {
   if (selectedOne == 0){
     fill(127,0,0);
     rect (300, 100, 300, 300);
+    state= true;
   }
   
   if (selectedOne == 1){
     fill(0,127,0);
     ellipse(450,250,300,300);
+    state= true;
   }
   
   if (selectedOne == 2){
     img.resize(300, 300);
     image(img, 300, 100);
+    state= true;
   }
   
   // print out the number of seconds the app has been running
@@ -110,28 +117,29 @@ void draw() {
   fill(127,127,127);
   textAlign(CENTER);
   
-  // save the pause time 
-  if(selectedOne == 3)
-  {
-    pauseTime = millis();
-  }
-  else if (selectedOne != 4)
-  {
-    timeString = str(floor((currentTime-pauseTime)/1000));
-    text(timeString, 100, 625);
-  }
-  // pause not working 
-  /*
-  if(selectedOne == 4)
-  {
-    pauseTime = millis();
-  }
-  else if (selectedOne != 3)
-  {
-    timeString = str(floor((pauseTime + 1000)/1000));
-    text(timeString, 100, 625);
-  }*/
+  
+  if(selectedOne !=3 && selectedOne != 4 ){
+    int temp = 0;
+    if(laststate == true){
+      temp = currentTime-save;
+      laststate = false;
+    }
 
+    
+    timeString = str(floor((currentTime-temp)/1000));
+   
+    text(timeString, 100, 625);
+  }
+  if(selectedOne == 3){
+    pauseTime = millis();
+    
+  }
+  if(selectedOne ==4){
+    save = currentTime;
+    laststate = true;
+  
+  }
+  
 
 }
 

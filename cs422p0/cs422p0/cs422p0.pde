@@ -121,7 +121,7 @@ void draw() {
     text(timeString, 100, 625);
   }
   // pause not working 
-  
+  /*
   if(selectedOne == 4)
   {
     pauseTime = millis();
@@ -130,7 +130,7 @@ void draw() {
   {
     timeString = str(floor((pauseTime + 1000)/1000));
     text(timeString, 100, 625);
-  }
+  }*/
 
 
 }

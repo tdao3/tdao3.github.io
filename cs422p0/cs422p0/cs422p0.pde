@@ -21,8 +21,6 @@ Audio beepSound = new Audio();
 // placeholder for future image
 PImage img[];
 
-
-
 // some buttons
 int[][] buttons = { {50, 100}, {50, 200}, {50, 300},{50, 400},{50, 500}};
 int buttonX = 100;

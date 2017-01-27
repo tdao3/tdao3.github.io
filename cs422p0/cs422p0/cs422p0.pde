@@ -28,7 +28,7 @@ int buttonY = 75;
 
 // no buttons / mode currently selected
 int selectedOne = -1;
-
+int imgCount = 0;
 int currentTime;
 int reset = 0;
 int pause = 0;
@@ -78,7 +78,23 @@ void draw() {
   noStroke();
   
   currentTime = millis() - reset;
-    
+   
+  delay(2);
+  
+  if(imgCount == 0)
+  {
+    rect(300,100,300,300);
+    imgCount++;
+  }
+  else if(imgCount == 1)
+  {
+    ellipse(350,250,300,300);
+  }
+  else if(imgCount > 1)
+  {
+    imgCount = 0;
+  }
+  
   // draw some buttons
   fill(127,127,127);
   for (int loopCounter=0; loopCounter < buttons.length; loopCounter++)

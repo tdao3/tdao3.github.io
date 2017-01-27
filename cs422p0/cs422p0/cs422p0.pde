@@ -75,6 +75,14 @@ void setup() {
   // as with sounds Processing likes files in the data directory, Processing.js outside that directory
   img1 = loadImage("sketch2.gif", "gif");
   img1.loadPixels();
+  
+  if(millis() % 2000 == 0)
+  {
+    img2 = loadImage("pic1.jpg", "jpg");
+    img2.loadPixels();
+  }
+  
+  /*
   img2 = loadImage("pic1.jpg", "jpg");
   img2.loadPixels();
   img3 = loadImage("pic2.jpg", "jpg");
@@ -95,7 +103,7 @@ void setup() {
   img10.loadPixels();
   img11 = loadImage("pic10.jpeg", "jpeg");
   img11.loadPixels();
-  
+  */
   f = createFont("Arial",24,true);
   
   loadSounds();

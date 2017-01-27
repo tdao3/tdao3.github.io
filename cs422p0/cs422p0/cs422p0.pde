@@ -127,18 +127,20 @@ void draw() {
 
     
     timeString = str(floor((currentTime-temp)/1000));
-   
     text(timeString, 100, 625);
   }
   if(selectedOne == 3){
     pauseTime = millis();
     
   }
+  // not working
+  /*
   if(selectedOne ==4){
     save = currentTime;
     laststate = true;
   
   }
+  */
   
 
 }

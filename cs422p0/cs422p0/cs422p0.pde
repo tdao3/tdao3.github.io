@@ -20,16 +20,7 @@ Audio beepSound = new Audio();
 
 // placeholder for future image
 PImage img1;
-PImage img2;
-PImage img3;
-PImage img4;
-PImage img5;
-PImage img6;
-PImage img7;
-PImage img8;
-PImage img9;
-PImage img10;
-PImage img11;
+PImage img[];
 
 
 
@@ -47,7 +38,7 @@ int pause = 0;
 boolean stop = false;
 int pauseSubtractor;
 PFont f;
-
+int timer = 0;
 /////////////////////////////////////////////////////
 
 void loadSounds(){
@@ -73,37 +64,29 @@ void setup() {
   
   // grab an image to use later
   // as with sounds Processing likes files in the data directory, Processing.js outside that directory
-  img1 = loadImage("sketch2.gif", "gif");
-  img1.loadPixels();
+  img[0] = loadImage("sketch2.gif", "gif");
+  img[0].loadPixels();
+  img[1] = loadImage("pic1.jpg", "jpg");
+  img[1].loadPixels();
+  img[2] = loadImage("pic2.jpg", "jpg");
+  img[2].loadPixels();
+  img[3] = loadImage("pic3.jpg", "jpg");
+  img[3].loadPixels();
+  img[4] = loadImage("pic4.jpg", "jpg");
+  img[4].loadPixels();
+  img[5] = loadImage("pic5.jpeg", "jpeg");
+  img[5].loadPixels();
+  img[6] = loadImage("pic6.jpg", "jpg");
+  img[6].loadPixels();
+  img[7] = loadImage("pic7.jpg", "jpg");
+  img[7].loadPixels();
+  img[8] = loadImage("pic8.jpg", "jpg");
+  img[8].loadPixels();
+  img[9] = loadImage("pic9.jpg", "jpg");
+  img[9].loadPixels();
+  img[10] = loadImage("pic10.jpeg", "jpeg");
+  img[10].loadPixels();
   
-  if(millis() % 2000 == 0)
-  {
-    img2 = loadImage("pic1.jpg", "jpg");
-    img2.loadPixels();
-  }
-  
-  /*
-  img2 = loadImage("pic1.jpg", "jpg");
-  img2.loadPixels();
-  img3 = loadImage("pic2.jpg", "jpg");
-  img3.loadPixels();
-  img4 = loadImage("pic3.jpg", "jpg");
-  img4.loadPixels();
-  img5 = loadImage("pic4.jpg", "jpg");
-  img5.loadPixels();
-  img6 = loadImage("pic5.jpeg", "jpeg");
-  img6.loadPixels();
-  img7 = loadImage("pic6.jpg", "jpg");
-  img7.loadPixels();
-  img8 = loadImage("pic7.jpg", "jpg");
-  img8.loadPixels();
-  img9 = loadImage("pic8.jpg", "jpg");
-  img9.loadPixels();
-  img10 = loadImage("pic9.jpg", "jpg");
-  img10.loadPixels();
-  img11 = loadImage("pic10.jpeg", "jpeg");
-  img11.loadPixels();
-  */
   f = createFont("Arial",24,true);
   
   loadSounds();
@@ -119,6 +102,27 @@ void draw() {
   
   currentTime = millis() - reset;
 
+   if (millis() - timer >= 2000) {
+    if(imgCount == 0)
+    {
+      img[0].resize(300, 300);
+      image(img[0], 300, 100);
+    }
+    else if(imgCount == 1)
+    {
+      img[1].resize(300, 300);
+      image(img[1], 300, 100);
+    }
+    imgCount++;
+    if(imgCount > 1){
+      imgCount = 0;
+    }
+    timer = millis();
+   }
+  else{
+    img[imgCount].resize(300, 300);
+    image(img[imgCount], 300, 100);
+  }
 
   
   // draw some buttons
@@ -146,26 +150,6 @@ void draw() {
   if (selectedOne == 2){
     img1.resize(300, 300);
     image(img1, 300, 100);
-    img2.resize(300, 300);
-    image(img2, 300, 100);
-    img3.resize(300, 300);
-    image(img3, 300, 100);
-    img4.resize(300, 300);
-    image(img4, 300, 100);
-    img5.resize(300, 300);
-    image(img5, 300, 100);
-    img6.resize(300, 300);
-    image(img6, 300, 100);
-    img7.resize(300, 300);
-    image(img7, 300, 100);
-    img8.resize(300, 300);
-    image(img8, 300, 100);
-    img9.resize(300, 300);
-    image(img9, 300, 100);
-    img10.resize(300, 300);
-    image(img10, 300, 100);
-    img11.resize(300, 300);
-    image(img11, 300, 100);
   }
   if (selectedOne == 3){
     reset = millis();

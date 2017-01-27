@@ -119,15 +119,10 @@ void draw() {
   
   
   if(selectedOne !=3 && selectedOne != 4 ){
-    int temp = 0;
-    if(laststate == true){
-      temp = currentTime-save;
-      laststate = false;
+    timeString = str(floor((currentTime-pauseTime)/1000));
+    text(timeString, 100, 625);
     }
 
-    
-    timeString = str(floor((currentTime-temp)/1000));
-    text(timeString, 100, 625);
   }
   if(selectedOne == 3){
     pauseTime = millis();

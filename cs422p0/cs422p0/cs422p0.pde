@@ -64,6 +64,27 @@ void setup() {
   img = loadImage("sketch2.gif", "gif");
   img.loadPixels();
   
+  img = loadImage("pic1", "jpg");
+  img.loadPixels();
+  img = loadImage("pic2", "jpg");
+  img.loadPixels();
+  img = loadImage("pic3", "jpg");
+  img.loadPixels();
+  img = loadImage("pic4", "jpg");
+  img.loadPixels();
+  img = loadImage("pic5", "jpeg");
+  img.loadPixels();
+  img = loadImage("pic6", "jpg");
+  img.loadPixels();
+  img = loadImage("pic7", "jpg");
+  img.loadPixels();
+  img = loadImage("pic8", "jpg");
+  img.loadPixels();
+  img = loadImage("pic9", "jpg");
+  img.loadPixels();
+  img = loadImage("pic10", "jpeg");
+  img.loadPixels();
+  
   f = createFont("Arial",24,true);
   
   loadSounds();

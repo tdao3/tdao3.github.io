@@ -102,15 +102,52 @@ void draw() {
   currentTime = millis() - reset;
 
    if (millis() - timer >= 2000) {
-    if(imgCount == 0)
+    switch (imgCount)
     {
-      img[0].resize(300, 300);
-      image(img[0], 300, 100);
-    }
-    else if(imgCount == 1)
-    {
-      img[1].resize(300, 300);
-      image(img[1], 300, 100);
+      case 0: 
+        img[0].resize(300, 300);
+        image(img[0], 300, 100);
+        break;
+      case 1:
+        img[1].resize(300, 300);
+        image(img[1], 300, 100);
+        break;
+      case 2:
+        img[2].resize(300, 300);
+        image(img[2], 300, 100);
+        break;
+      case 3:
+        img[3].resize(300, 300);
+        image(img[3], 300, 100);
+        break;
+      case 4:
+        img[4].resize(300, 300);
+        image(img[4], 300, 100);
+        break;
+      case 5:
+        img[5].resize(300, 300);
+        image(img[5], 300, 100);
+        break;
+      case 6:
+        img[6].resize(300, 300);
+        image(img[6], 300, 100);
+        break;
+      case 7:
+        img[7].resize(300, 300);
+        image(img[7], 300, 100);
+        break;
+      case 8:
+        img[8].resize(300, 300);
+        image(img[8], 300, 100);
+        break;
+      case 9:
+        img[9].resize(300, 300);
+        image(img[9], 300, 100);
+        break;
+      case 10:
+        img[10].resize(300, 300);
+        image(img[10], 300, 100);
+        break;
     }
     imgCount++;
     if(imgCount > 1){

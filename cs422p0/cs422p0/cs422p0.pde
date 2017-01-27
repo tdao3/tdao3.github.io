@@ -152,25 +152,25 @@ void draw() {
     img1.resize(300, 300);
     image(img1, 300, 100);
     img2.resize(300, 300);
-    image(img1, 300, 100);
+    image(img2, 300, 100);
     img3.resize(300, 300);
-    image(img1, 300, 100);
+    image(img3, 300, 100);
     img4.resize(300, 300);
-    image(img1, 300, 100);
+    image(img4, 300, 100);
     img5.resize(300, 300);
-    image(img1, 300, 100);
+    image(img5, 300, 100);
     img6.resize(300, 300);
-    image(img1, 300, 100);
+    image(img6, 300, 100);
     img7.resize(300, 300);
-    image(img1, 300, 100);
+    image(img7, 300, 100);
     img8.resize(300, 300);
-    image(img1, 300, 100);
+    image(img8, 300, 100);
     img9.resize(300, 300);
-    image(img1, 300, 100);
+    image(img9, 300, 100);
     img10.resize(300, 300);
-    image(img1, 300, 100);
+    image(img10, 300, 100);
     img11.resize(300, 300);
-    image(img1, 300, 100);
+    image(img11, 300, 100);
   }
   if (selectedOne == 3){
     reset = millis();

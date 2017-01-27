@@ -75,25 +75,25 @@ void setup() {
   // as with sounds Processing likes files in the data directory, Processing.js outside that directory
   img1 = loadImage("sketch2.gif", "gif");
   img1.loadPixels();
-  img2 = loadImage("pic1", "jpg");
+  img2 = loadImage("pic1.jpg", "jpg");
   img2.loadPixels();
-  img3 = loadImage("pic2", "jpg");
+  img3 = loadImage("pic2.jpg", "jpg");
   img3.loadPixels();
-  img4 = loadImage("pic3", "jpg");
+  img4 = loadImage("pic3.jpg", "jpg");
   img4.loadPixels();
-  img5 = loadImage("pic4", "jpg");
+  img5 = loadImage("pic4.jpg", "jpg");
   img5.loadPixels();
-  img6 = loadImage("pic5", "jpeg");
+  img6 = loadImage("pic5.jpeg", "jpeg");
   img6.loadPixels();
-  img7 = loadImage("pic6", "jpg");
+  img7 = loadImage("pic6.jpg", "jpg");
   img7.loadPixels();
-  img8 = loadImage("pic7", "jpg");
+  img8 = loadImage("pic7.jpg", "jpg");
   img8.loadPixels();
-  img9 = loadImage("pic8", "jpg");
+  img9 = loadImage("pic8.jpg", "jpg");
   img9.loadPixels();
-  img10 = loadImage("pic9", "jpg");
+  img10 = loadImage("pic9.jpg", "jpg");
   img10.loadPixels();
-  img11 = loadImage("pic10", "jpeg");
+  img11 = loadImage("pic10.jpeg", "jpeg");
   img11.loadPixels();
   
   f = createFont("Arial",24,true);
@@ -111,6 +111,8 @@ void draw() {
   
   currentTime = millis() - reset;
 
+
+  
   // draw some buttons
   fill(127,127,127);
   for (int loopCounter=0; loopCounter < buttons.length; loopCounter++)

@@ -19,7 +19,6 @@ Audio beepSound = new Audio();
 // sounds are also a bit slowerer to start up in Processing.js
 
 // placeholder for future image
-PImage img1;
 PImage img[];
 
 
@@ -148,8 +147,8 @@ void draw() {
   }
   
   if (selectedOne == 2){
-    img1.resize(300, 300);
-    image(img1, 300, 100);
+    img[0].resize(300, 300);
+    image(img[0], 300, 100);
   }
   if (selectedOne == 3){
     reset = millis();

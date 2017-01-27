@@ -150,7 +150,7 @@ void draw() {
         break;
     }
     imgCount++;
-    if(imgCount > 1){
+    if(imgCount > 10){
       imgCount = 0;
     }
     timer = millis();

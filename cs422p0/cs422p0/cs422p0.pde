@@ -37,7 +37,7 @@ int pause = 0;
 boolean stop = false;
 int pauseSubtractor;
 PFont f;
-int timer = 0;
+int timer;
 /////////////////////////////////////////////////////
 
 void loadSounds(){
@@ -60,6 +60,8 @@ void playBeep() {
 void setup() {
   // set the canvas size
   size(960, 800);
+  
+  timer = 0;
   
   // grab an image to use later
   // as with sounds Processing likes files in the data directory, Processing.js outside that directory

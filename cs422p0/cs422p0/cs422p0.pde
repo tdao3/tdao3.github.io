@@ -60,7 +60,7 @@ void playBeep() {
 void setup() {
   // set the canvas size
   size(960, 800);
-  
+  img = new PImage[10];
   timer = 0;
   
   // grab an image to use later

@@ -79,20 +79,21 @@ void draw() {
   
   currentTime = millis() - reset;
    
-  delay(2);
-  
-  if(imgCount == 0)
+  if(millis() % 2000 == 0)
   {
-    rect(300,100,300,300);
-    imgCount++;
-  }
-  else if(imgCount == 1)
-  {
-    ellipse(350,250,300,300);
-  }
-  else if(imgCount > 1)
-  {
-    imgCount = 0;
+    if(imgCount == 0)
+    {
+      rect(300,100,300,300);
+      imgCount++;
+    }
+    else if(imgCount == 1)
+    {
+      ellipse(350,250,300,300);
+    }
+    else if(imgCount > 1)
+    {
+      imgCount = 0;
+    }
   }
   
   // draw some buttons

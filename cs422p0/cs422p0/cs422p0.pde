@@ -63,7 +63,6 @@ void setup() {
   // as with sounds Processing likes files in the data directory, Processing.js outside that directory
   img = loadImage("sketch2.gif", "gif");
   img.loadPixels();
-  
   img = loadImage("pic1", "jpg");
   img.loadPixels();
   img = loadImage("pic2", "jpg");
@@ -99,9 +98,7 @@ void draw() {
   noStroke();
   
   currentTime = millis() - reset;
-   
-  if(millis() % 2000 == 0)
-  {
+
     if(imgCount == 0)
     {
       rect(300,100,300,300);
@@ -111,11 +108,11 @@ void draw() {
     {
       ellipse(350,250,300,300);
     }
-    else if(imgCount > 1)
+    else if(imgCount > 10)
     {
       imgCount = 0;
     }
-  }
+
   
   // draw some buttons
   fill(127,127,127);

@@ -16,6 +16,10 @@ h1 {
     margin-top: -10px;
 }
 
+p {
+	color:#333;
+}
+
 /***************Menu bar**********/
 ul {
     list-style-type: none;

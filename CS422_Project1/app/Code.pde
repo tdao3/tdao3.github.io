@@ -268,11 +268,11 @@ void draw()
   }
   
    
-  
+  /*
   // For debugging 
   textSize(50);
   fill(127, 127, 127);
-  text( "x:" + mouseX + "\n" + "y:" + mouseY, mouseX, mouseY); 
+  text( "x:" + mouseX + "\n" + "y:" + mouseY, mouseX, mouseY); */
 }
 
 void mousePressed()

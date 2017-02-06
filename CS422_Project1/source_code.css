@@ -2,6 +2,20 @@ body {
     background-color: rgba(37, 138, 54, 0.32);
 }
 
+/* welcome bar */
+h1 {
+    font-size: 50px;
+    color: #333;
+    text-align: center;
+    background-color: rgba(5, 175, 159, 0.75);
+    width: auto;
+    padding: 25px;
+    margin: 50px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+
 /***************Menu bar**********/
 ul {
     list-style-type: none;

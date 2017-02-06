@@ -28,7 +28,6 @@ void loadSounds()
 {
   // sound from http://soundbible.com/1598-Electronic-Chime.html 
   chime.setAttribute("src", "chime.mp3");
-  println("you loaded sound nigga");
 }
 
 void playChime()

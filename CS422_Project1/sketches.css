@@ -17,9 +17,10 @@ h1 {
 }
 
 .panels {
+
     border-radius: 5%;
-    width: 576px;
-    height: 1024px;
+    width: 50%;
+    height: 50%;
     margin-right: 30px;
     float: left;
 }
